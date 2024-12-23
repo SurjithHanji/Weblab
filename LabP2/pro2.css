@@ -1,0 +1,35 @@
+table{
+    border: solid 1pt black;
+    border-collapse:collapse ;
+    align-content: center;
+    margin: 0px 350px;
+}
+caption{
+    border: solid 1pt black;
+    background-color: azure;
+    color: darkred;
+    /* align-items: center; */
+    text-align: center;
+}
+.lab{
+    /* background-color: lightgrey; */
+    background-color: aqua;
+    color: darkmagenta;
+}
+thead,th{
+    background-color: lightgrey;
+    color:darkviolet ;
+}
+
+td,th{
+    border: solid 1pt black;
+    text-align: center;
+    padding: 5pt;
+}
+tfoot{
+    background-color: bisque;
+    color: blueviolet;
+}
+h1{
+    text-align: center;
+}
