@@ -1,0 +1,68 @@
+body{
+    margin: 10px;
+    border: solid 1pt black;
+    background-color: lightskyblue
+}
+.container{
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+#title{
+    border: solid 1pt black;
+    text-align: center;
+    padding: 20px;
+    color: darkorchid;
+    background-color: orange;
+}
+.post{
+    /* border: solid 1pt black; */
+    background-color: lightgoldenrodyellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    display: flex;
+}
+.second{
+    border: solid 1pt black;
+    /* background-color: lightgoldenrodyellow; */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcoral;
+    /* font-style: no
+     */
+     font-weight: lighter
+     /* display: flex; */
+}
+.third{
+    border: solid 1pt black;
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: lightgoldenrodyellow; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-style: normal;
+    display: flex; */
+}
+#hlo{
+    width: 300px;
+    height: 280px;
+
+}
+#hi{
+    width: 150px;
+    height: 200px;
+}
+#ho{
+    height: 250px;
+    width: 180px;
+}
+#hey{
+    display: flex;
+    /* background-color: chocolate; */
+
+}
+.bro{
+    display: flex;
+    background-color: chocolate;
+}
+a:hover{
+    background-color: greenyellow;
+}
