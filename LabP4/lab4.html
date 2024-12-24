@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="#" method="get" name="Registration Form">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="usn">USN</label></td>
+                    <td><input type="text" name="usn" id="usn"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="dob" name="dob" id="dob"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="select">Select A City</label></td>
+                    <td><select name="city" id="city">
+                        <optgroup label="Hasan">
+                            <option >hombale</option>
+                            <option >kalas</option>
+                            <option >moodigere</option>
+                        </optgroup>
+                        <optgroup label="Mysore">
+                            <option >bettadapura</option>
+                            <option >tn pura</option>
+                            <option >krs</option>
+                            
+                        </optgroup>
+                    </select>
+                </td>
+                </tr>
+
+                <tr>
+                    <td><label for="lang"> programming languages are known</label> 
+                    <input type="checkbox" name="lang" value="c">C 
+                    <input type="checkbox" name="lang" value="Java">JAVA 
+                    <input type="checkbox" name="lang" value="Python">Python</td>
+                </tr>
+
+                <tr>
+                    <td><label for="skill">Rate your knowledge in programmin</label></td>
+                    <td><input type="range" min="1" max="10" step="1"></td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="photo">Upload a photo</label></td>
+                    <td><input type="file" name="photo" id="phto"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fcolor">Choose color</label></td>
+                    <td><input type="color" name="fcolor" id="fcolor"></td>
+
+                </tr>
+
+                <tr>
+                   <td> <button type="submit">SUBMIT</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
