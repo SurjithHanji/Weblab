@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Paper</title>
+    <style>
+        #container{
+            background-color: lightcyan;
+            margin: 0;
+            padding: 0;
+        }
+        header img{
+            width: 300px;
+            height: 90px;
+            margin: 20px;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        nav ul{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 10px;
+            height: 30px;
+        }
+        nav li{
+            float: left;
+            padding: 10px;
+        }
+        nav li a{
+            display: block;
+            align-items: center;
+        }
+        nav li a:hover{
+            background-color: white;
+        }
+        section{
+            background-color: lightpink;
+            width: 70%;
+            padding: 0px;
+            float: left;
+            /* margin: auto; */
+            border: solid 1pt black;
+        }
+        aside{
+            /* display: inline-block;
+            position:inherit;
+            margin:5px;
+            padding: 5px;
+            width:28%; */
+            /* border: solid 1pt black;
+            vertical-align: top; */
+        }
+        footer{
+            background-color: lightgrey;
+            color: darkorchid;
+            text-align: center;
+        }
+        figure{
+            /* float: left; */
+            width: 200px;
+            height: 180px;
+            padding: 0;
+            border: solid 1pt balck;
+            
+        }
+        article{
+            height: 200px;
+            border: solid 1pt black;
+            margin: 10px;
+            /* width: 400px; */
+            overflow: auto;
+            /* display: flex;
+            gap: 30px; */
+            text-align: justify;
+            /* height: 300px; */
+            /* height: 200px; */
+            /* display: flex; */
+        }
+        hgroup{
+            background-color: darkcyan;
+        }
+        article p{
+            display: flex;
+        }
+        figcaption{
+            text-align: center;
+            background-color: lightgreen;
+            color: red;
+        }
+        .bro{
+            display: flex;
+            gap: 30px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <center>
+            <img id="hey" src="images.png" alt="">
+            </center>
+            <hr>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Cinema</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+
+        <section>
+            <h2>Latest News</h2>
+            <hr>
+            <article>
+                <h3>BJP won by taking 350 seats in MP election</h3>
+                
+                <figure>
+                    <img src="bjp.jpeg" alt="">
+                    <figcaption>BJP(Bhartiya Janata Party)</figcaption>
+                </figure>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consequuntur ipsam et explicabo nisi, facilis eius asperiores 
+                culpa. Commodi, ducimus cumque ut eum quibusdam minima magni 
+                explicabo ea dolores magnam sed. Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Dolores velit mollitia obcaecati ad
+                 enim alias laboriosam recusandae expedita aut maiores esse
+                 perspiciatis doloremque dolor et ipsum corrupti odio temporibus 
+               laudantium repellat earum, deleniti, reiciendis quia. Sit doloremque 
+               libero, corrupti itaque sed veritatis illum sint nihil porro magni
+                dolor architecto illo!</p>
+                
+            </article>
+
+            <article>
+                <h3>Kapil Sharma show reaches large no of views</h3>
+                <figure>
+                    <img src="kapil.jpeg" alt="">
+                    <figcaption>Kapil sharma show</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consequuntur ipsam et explicabo nisi, facilis eius asperiores 
+                culpa. Commodi, ducimus cumque ut eum quibusdam minima magni 
+                explicabo ea dolores magnam sed.</p>
+            </article>
+
+            <article>
+                <h3>Journey between two runouts</h3>
+                <figure>
+                    <img src="thala.jpeg" alt="">
+                    <figcaption>MS Dhoni</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consequuntur ipsam et explicabo nisi, facilis eius asperiores 
+                culpa. Commodi, ducimus cumque ut eum quibusdam minima magni 
+                explicabo ea dolores magnam sed.</p>
+            </article>
+
+            
+            <article>
+                <h3>TOXIC release date expected on</h3>
+                <figure>
+                    <img src="toxic.jpeg" alt="">
+                    <figcaption>Rocky Bhai</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consequuntur ipsam et explicabo nisi, facilis eius asperiores 
+                culpa. Commodi, ducimus cumque ut eum quibusdam minima magni 
+                explicabo ea dolores magnam sed.</p>
+            </article>
+        </section>
+        
+    </div>
+
+        <aside>
+            <hgroup>
+                <h3><a href="#">For more Sports</a></h3>
+                <h3><a href="#">For more polictical</a></h3>
+                <h3><a href="#">For more Entertainment</a></h3>
+            </hgroup>
+        </aside>
+
+    
+    <footer>
+        @Department of CSE | CMRIT
+    </footer>
+    
+</body>
+</html>
