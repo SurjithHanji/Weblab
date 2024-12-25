@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.animate-colors.js"></script>
+    <style>
+        body{
+            background-color: bisque;
+            padding-inline: 20px;
+            overflow: auto;
+            margin: 30px;
+            align-content: center;
+        }
+        button{
+            background-color: lightcoral;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY</h1>
+    <h2>Append content to the end of paragraph and list</h2>
+    <button id="btnAppend">append</button>
+    <p id="aboutjq">Jquery dates back to 2005</p>
+    <ul id="featuresjq">
+        <li>HTML DOM manipulation</li>
+        <li>css manipulation</li>
+    </ul>
+
+    <script>
+        $('#btnAppend').click(function(){
+            $('#aboutjq').append("<br>The various features are");
+            $('#featuresjq').append("<li>HTML manipulation</li>");
+        });
+    </script>
+
+
+<h2>change the state of css style element</h2>
+<button id="btnGrow">Animate Text-increase size</button>
+<button id="btnShrink">Animate Text-decrease size</button>
+<div id="animText">Jquery</div>
+
+<script>
+    $('#btnGrow').click(function(){
+        $('#animText').animate({
+            "opacity":0.25,
+            "fontSize":"+=4px"
+
+        });
+
+    });
+
+    $('#btnShrink').click(function(){
+        $('#animText').animate({
+            "opacity":1,
+            "fontSize":"-=4px"
+        });
+    });
+</script>
+
+<h2>chane the color of the animate div</h2>
+<input type="color" id="ipColor">
+<button id="btnColor">change color</button>
+<div id="foo" style="width:200px; height:100px; border: solid 1pt black;"  ></div>
+
+<script>
+    $('#btnColor').click(function(){
+        $('#foo').animate({
+            backgroundColor:$('#ipColor').val()
+        },"fast");
+    });
+</script>
+    
+</body>
+</html>
