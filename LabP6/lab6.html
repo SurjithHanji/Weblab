@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            align-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: lightgrey;
+            padding: 10px;
+            margin: 10px;
+            width: 400px;
+            align-items: center;
+            align-content: center;
+            border: solid 1pt black;
+        }
+        h1{
+            color: darkorange;
+            text-align: center;
+        }
+        input{
+            background-color: lightblue;
+            padding: 10px;
+            height: auto;
+            width: 45px;
+        }
+        input[type=button]{
+            border-radius: 10px;
+            background-color: lightyellow;
+            width: 70px;
+            height: 70px;
+            border: inset 1pt ;
+
+            padding: auto;
+            
+        }
+        input[type=button]:hover{
+            background-color: aqua;
+            border: solid 1pt black;
+            font-size: 30px;
+        }
+        input[type=text]{
+            width: 200px;
+            height: 40px;
+            border-radius:20px ;
+            background-color: lightpink;
+            padding: 10px;
+        }
+    
+        footer{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="container">
+    <h1>JS Calculator</h1>
+    <form name="calcForm">
+         <input type="text" id="answer" name="answer" />
+        <input type="button" value="c" onclick="calcForm.answer.value=''" /> <br>
+        
+
+        <input type="button" value="1" onclick="calcForm.answer.value+='1'">
+        <input type="button" value="2" onclick="calcForm.answer.value+='2'">
+        <input type="button" value="3" onclick="calcForm.answer.value+='3'">
+        <input type="button" value="+" onclick="calcForm.answer.value+='+'">
+        <br>
+
+        <input type="button" value="4" onclick="calcForm.answer.value+='4'">
+        <input type="button" value="5" onclick="calcForm.answer.value+='5'">
+        <input type="button" value="6" onclick="calcForm.answer.value+='6'">
+        <input type="button" value="-" onclick="calcForm.answer.value+='-'">
+        <br>
+
+        <input type="button" value="7" onclick="calcForm.answer.value+='7'">
+        <input type="button" value="8" onclick="calcForm.answer.value+='8'">
+        <input type="button" value="9" onclick="calcForm.answer.value+='9'">
+        <input type="button" value="*" onclick="calcForm.answer.value+='*'">
+        <br>
+        
+        <input type="button" value="/" onclick="calcForm.answer.value+='/'">
+        <input type="button" value="0" onclick="calcForm.answer.value+='0'">
+        <input type="button" value="." onclick="calcForm.answer.value+='.'">
+        <input type="button" value="%" onclick="calcForm.answer.value+='%'">
+        <br>
+
+        <input type="button" value="^" onclick="calcForm.answer.value+='**'">
+        <input type="button" value="x^2" onclick="squareNumber()">
+        <input type="button" value="root" onclick="squareRoot()">
+        <input type="button" value="=" onclick="calcForm.answer.value=eval(calcForm.answer.value)">
+    
+
+    <footer>
+        created by CMRIT
+    </footer>
+    </form>
+    </div>
+    </center>
+    <script>
+        function squareNumber(){
+            let value=calcForm.answer.value;
+            calcForm.answer.value=Math.pow(value,2);
+        }
+        function squareRoot(){
+            let value=calcForm.answer.value;
+            if(value>0){
+                calcForm.answer.value=Math.sqrt(value);
+
+            }
+            else{
+                calcForm.answer.value="ERROR";
+            }
+
+        }
+    </script>
+</body>
+</html>
