@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        div{
+            background-color: antiquewhite;
+            /* border: solid 1pt black; */
+            border: solid 1pt brown;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AJAX AND JQUERY</h1>
+    <h2>change a content using ajax without Jquery</h2>
+    <button onclick="loadDoc()">Change contetn with ajax</button>
+    <div id="loadText"></div>
+
+    <script>
+        function loadDoc(){
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+               if(this.readyState==4 && this.status==200){
+                     document.getElementById('loadText').innerHTML=this.responseText;
+               }
+            };
+            xhr.open('GET','content.txt',true);
+            xhr.send();
+
+        }
+    </script>
+
+    <h2>change a content using ajax with Jquery</h2>
+    <button id="btnLoad">chnage a contetn with ajax and jq</button>
+    <div id="loadjqText"></div>
+
+    <script>
+        $('#btnLoad').click(function(){
+    $.ajax({url:'content.txt',success:function(result){
+        $('#loadjqText').html(result);
+
+    }});
+        });
+    </script>
+
+    <h2>getJSON content</h2>
+    <button id="btnGetJson">change content</button>
+    <div id="studentInfo"></div>
+    <script>
+        $('#btnGetJson').click(function(){
+            $.getJSON('student.json',function(result) {
+                $('#studentInfo').html("name:"+result.name);
+                $('#studentInfo').append("<br> usn:"+result.usn);
+                $('#studentInfo').append("<br> department:"+result.department);
+                
+            });
+        });
+    </script>
+
+
+<h2>parseJSON content</h2>
+<button id="btnParseJson">change content</button>
+<div id="courseInfo"></div>
+
+<script>
+    $('#btnParseJson').click(function(){
+        let txt='{"cname":"wb","code":"bcl504"}'
+        let obj=jQuery.parseJSON(txt);
+        $('#courseInfo').html("cname:"+obj.cname);
+        $('#courseInfo').append("<br> code:"+obj.code);
+    })
+</script>
+</body>
+</html>
